@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, User } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import './Navbar.css';
+import logoImg from '../../assets/logo.jpg';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Navbar() {
       <div className="container navbar-container">
         {/* Logo */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src="/logo.jpg" alt="UMBC Logo" className="logo-image" style={{ height: '80px', objectFit: 'contain' }} />
+          <img src={logoImg} alt="UMBC Logo" className="logo-image" style={{ height: '80px', objectFit: 'contain' }} />
         </Link>
 
         {/* Desktop Menu */}
