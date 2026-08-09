@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Shield } from 'lucide-react';
 import './CheckoutHeader.css';
+import logoImg from '../../assets/logo.jpg';
 
 export function CheckoutHeader() {
   return (
     <header className="checkout-header">
       <div className="container checkout-header-container">
         <Link to="/" className="checkout-logo">
-          <img src="/logo.jpg" alt="UMBC Logo" className="logo-image" style={{ height: '72px', objectFit: 'contain' }} />
+          <img src={logoImg} alt="UMBC Logo" className="logo-image" style={{ height: '72px', objectFit: 'contain' }} />
         </Link>
         
         <div className="checkout-security-badge">
