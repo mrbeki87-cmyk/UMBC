@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 // Removed Shield import
 import { siteConfig } from '../../config';
 import './Footer.css';
+import logoImg from '../../assets/logo.jpg';
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/logo.jpg" alt="UMBC Logo" className="logo-image" style={{ height: '96px', objectFit: 'contain' }} />
+              <img src={logoImg} alt="UMBC Logo" className="logo-image" style={{ height: '96px', objectFit: 'contain' }} />
             </Link>
             <p className="footer-description">
               A modern technology university focused on practical education in programming, web development, architecture, networking, and cybersecurity.
