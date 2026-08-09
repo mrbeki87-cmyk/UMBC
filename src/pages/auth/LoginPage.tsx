@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 // Removed Shield import
 import { useAuth } from '../../context/AuthContext';
 import './LoginPage.css';
+import logoTransparent from '../../assets/logo-transparent.png';
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
@@ -52,7 +53,7 @@ export function LoginPage() {
       <div className="login-container">
         <div className="login-header">
           <div className="login-logo">
-            <img src="/logo-transparent.png" alt="UMBC Logo" className="logo-image" style={{ height: '120px', objectFit: 'contain' }} />
+            <img src={logoTransparent} alt="UMBC Logo" className="logo-image" style={{ height: '120px', objectFit: 'contain' }} />
           </div>
           <h1 className="login-title">Welcome Back</h1>
           <p className="login-subtitle">Sign in to continue to your learning experience.</p>
