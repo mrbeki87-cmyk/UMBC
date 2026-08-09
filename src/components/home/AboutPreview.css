@@ -1,0 +1,42 @@
+.about-preview {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-icon-wrapper {
+  background-color: rgba(253, 180, 20, 0.1);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  display: inline-flex;
+}
+
+.about-icon {
+  color: var(--color-primary-gold);
+}
+
+.about-preview .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray-600);
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+  }
+}

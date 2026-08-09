@@ -1,0 +1,124 @@
+.course-hero {
+  background-color: var(--color-primary-black);
+  color: var(--color-white);
+  padding: 3rem 0 4rem;
+  position: relative;
+}
+
+.course-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(253, 180, 20, 0.5), transparent);
+}
+
+.course-hero-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  position: relative;
+}
+
+.hero-main-col {
+  padding-right: 2rem;
+}
+
+.course-category-badge {
+  display: inline-block;
+  color: var(--color-primary-black);
+  background-color: var(--color-primary-gold);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.course-hero .course-title {
+  color: var(--color-white);
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.course-hero .course-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-gray-300);
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.course-meta-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.meta-item.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.stars {
+  color: var(--color-primary-gold);
+  display: flex;
+  gap: 0.15rem;
+}
+
+.rating-score {
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: 1.1rem;
+}
+
+.rating-placeholder {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+}
+
+.meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.meta-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gray-300);
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .course-hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-main-col {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-hero .course-title {
+    font-size: 2.25rem;
+  }
+  
+  .course-hero .course-description {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}

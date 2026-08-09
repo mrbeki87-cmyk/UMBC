@@ -1,0 +1,30 @@
+.course-details-section {
+  margin-bottom: 3rem;
+}
+
+.detail-block {
+  margin-bottom: 2.5rem;
+}
+
+.detail-block:last-child {
+  margin-bottom: 0;
+}
+
+.detail-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+}
+
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bullet-list li {
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}

@@ -1,0 +1,106 @@
+.course-not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-50);
+}
+
+.not-found-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found-icon {
+  color: var(--color-primary-gold);
+  margin-bottom: 1.5rem;
+}
+
+.not-found-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.not-found-desc {
+  color: var(--color-gray-600);
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+/* Course Detail Layout */
+.course-detail-page {
+  background-color: var(--color-white);
+  padding-bottom: 6rem;
+}
+
+.course-body-container {
+  padding-top: 3rem;
+}
+
+.course-body-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  position: relative;
+}
+
+.desktop-purchase-card {
+  position: sticky;
+  top: 100px; /* Account for navbar */
+  margin-top: -180px; /* Pull it up into the hero section visually */
+  z-index: 20;
+}
+
+.mobile-purchase-card {
+  display: none;
+}
+
+.course-final-cta {
+  background-color: var(--color-gray-50);
+  padding: 3rem;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  border: 1px solid var(--color-gray-200);
+  margin-bottom: 3rem;
+}
+
+.course-final-cta p {
+  color: var(--color-gray-600);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 1024px) {
+  .course-body-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .desktop-purchase-card {
+    display: none;
+  }
+  
+  .mobile-purchase-card {
+    display: block;
+    margin-top: -6rem; /* Pull up into hero slightly */
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-body-container {
+    padding-top: 0;
+  }
+  
+  .mobile-purchase-card {
+    margin-top: -2rem;
+  }
+  
+  .course-final-cta {
+    padding: 2rem;
+  }
+}

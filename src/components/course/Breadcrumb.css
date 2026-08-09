@@ -1,0 +1,30 @@
+.breadcrumb-container {
+  background-color: var(--color-primary-black);
+  padding: 1.5rem 0 0;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-gray-400);
+}
+
+.breadcrumb-link {
+  color: var(--color-gray-400);
+  transition: color var(--transition-normal);
+}
+
+.breadcrumb-link:hover {
+  color: var(--color-white);
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.breadcrumb-current {
+  color: var(--color-primary-gold);
+  font-weight: 500;
+}

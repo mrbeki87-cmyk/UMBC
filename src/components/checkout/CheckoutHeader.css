@@ -1,0 +1,71 @@
+.checkout-header {
+  background-color: var(--color-primary-black);
+  color: var(--color-white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.checkout-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+
+.checkout-logo .logo-icon {
+  color: var(--color-primary-gold);
+}
+
+.checkout-security-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  color: var(--color-gray-300);
+}
+
+.checkout-security-badge .security-icon {
+  color: var(--color-primary-gold);
+}
+
+.checkout-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+}
+
+.progress-step.active {
+  color: var(--color-primary-gold);
+  font-weight: 600;
+}
+
+.progress-divider {
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-gray-600);
+}
+
+@media (max-width: 768px) {
+  .checkout-header-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .checkout-progress {
+    width: 100%;
+    justify-content: center;
+  }
+}

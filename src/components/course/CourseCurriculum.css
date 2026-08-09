@@ -1,0 +1,141 @@
+.course-curriculum {
+  margin-bottom: 3rem;
+}
+
+.curriculum-header {
+  margin-bottom: 1.5rem;
+}
+
+.curriculum-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+}
+
+.curriculum-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-text {
+  color: var(--color-primary-gold);
+  font-weight: 500;
+  padding: 0;
+}
+
+.btn-text:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  color: var(--color-gray-300);
+}
+
+.accordion-container {
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-gray-50);
+  color: var(--color-primary-black);
+  text-align: left;
+}
+
+.accordion-header:hover {
+  background-color: var(--color-gray-100);
+}
+
+.accordion-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.accordion-meta {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+}
+
+.accordion-content {
+  background-color: var(--color-white);
+  padding: 1rem 1.5rem;
+}
+
+.lesson-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.lesson-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.lesson-title-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.lesson-icon {
+  color: var(--color-gray-400);
+  margin-top: 0.125rem;
+}
+
+.lesson-title {
+  color: var(--color-gray-700);
+  font-size: 0.95rem;
+}
+
+.lesson-duration {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .curriculum-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .accordion-header {
+    padding: 1rem;
+  }
+  
+  .accordion-content {
+    padding: 1rem;
+  }
+}

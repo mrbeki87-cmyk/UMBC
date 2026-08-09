@@ -1,0 +1,57 @@
+.course-instructor {
+  margin-bottom: 4rem;
+}
+
+.instructor-card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.instructor-photo {
+  flex-shrink: 0;
+}
+
+.instructor-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructor-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instructor-name {
+  font-size: 1.5rem;
+  color: var(--color-primary-black);
+  margin-bottom: 0.25rem;
+}
+
+.instructor-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-primary-gold);
+  margin-bottom: 1rem;
+}
+
+.instructor-bio {
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .instructor-card {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
