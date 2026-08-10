@@ -113,7 +113,8 @@ export const courses: Course[] = [
     instructor: {
       name: "Dr. Sarah Chen",
       role: "Lead Programming Instructor",
-      bio: "Dr. Chen has over 15 years of experience in software engineering and has taught programming fundamentals to thousands of students worldwide."
+      bio: "Dr. Chen has over 15 years of experience in software engineering and has taught programming fundamentals to thousands of students worldwide.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
     },
     features: commonFeatures
   },
@@ -167,7 +168,8 @@ export const courses: Course[] = [
     instructor: {
       name: "Dr. Marcus Johnson",
       role: "Senior Web Developer & Educator",
-      bio: "With a background in building large-scale web applications, Dr. Johnson specializes in modern JavaScript frameworks and responsive design."
+      bio: "With a background in building large-scale web applications, Dr. Johnson specializes in modern JavaScript frameworks and responsive design.",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400"
     },
     features: commonFeatures
   },
@@ -221,7 +223,8 @@ export const courses: Course[] = [
     instructor: {
       name: "Dr. Elena Rodriguez",
       role: "Hardware Systems Architect",
-      bio: "Dr. Rodriguez holds a Ph.D. in Computer Engineering and has spent a decade designing microprocessors before bringing her expertise to the classroom."
+      bio: "Dr. Rodriguez holds a Ph.D. in Computer Engineering and has spent a decade designing microprocessors before bringing her expertise to the classroom.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400&h=400"
     },
     features: commonFeatures
   },
@@ -275,7 +278,8 @@ export const courses: Course[] = [
     instructor: {
       name: "Dr. James Wilson",
       role: "Principal Network Engineer",
-      bio: "An expert in network infrastructure and protocols, Dr. Wilson has designed enterprise-grade networks and holds multiple advanced networking certifications."
+      bio: "An expert in network infrastructure and protocols, Dr. Wilson has designed enterprise-grade networks and holds multiple advanced networking certifications.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
     },
     features: commonFeatures
   },
@@ -327,9 +331,10 @@ export const courses: Course[] = [
     requirements: commonRequirements,
     audience: commonAudience,
     instructor: {
-      name: "Dr. Aisha Patel",
+      name: "Dr. Aryan Patel",
       role: "Chief Information Security Officer",
-      bio: "Dr. Patel brings real-world cybersecurity experience to her teaching, focusing on ethical hacking, cryptography, and secure system design."
+      bio: "Dr. Patel brings real-world cybersecurity experience to his teaching, focusing on ethical hacking, cryptography, and secure system design.",
+      image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&q=80&w=400&h=400"
     },
     features: commonFeatures,
     downloadFile: "https://drive.google.com/file/d/1iVR3b2Qr0RP-m9_WqxnTGFtUWWPYlJ9v/view?usp=drive_link"
