@@ -332,6 +332,6 @@ export const courses: Course[] = [
       bio: "Dr. Patel brings real-world cybersecurity experience to her teaching, focusing on ethical hacking, cryptography, and secure system design."
     },
     features: commonFeatures,
-    downloadFile: "/courses/cybersecurity.zip"
+    downloadFile: "https://drive.google.com/file/d/1iVR3b2Qr0RP-m9_WqxnTGFtUWWPYlJ9v/view?usp=drive_link"
   }
 ];
