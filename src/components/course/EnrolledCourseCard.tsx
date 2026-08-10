@@ -92,7 +92,21 @@ export function EnrolledCourseCard({ course }: EnrolledCourseCardProps) {
             <p className="file-desc">Complete course package including videos, notes, exercises, and resources.</p>
             
             {course.downloadFile ? (
-              <a href={course.downloadFile} download className="btn btn-primary download-btn">
+              <a 
+                href={(() => {
+                  if (course.downloadFile.includes('drive.google.com/file/d/')) {
+                    const match = course.downloadFile.match(/\/d\/([a-zA-Z0-9_-]+)/);
+                    if (match && match[1]) {
+                      return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+                    }
+                  }
+                  return course.downloadFile;
+                })()} 
+                download 
+                target={course.downloadFile.includes('drive.google.com') ? "_blank" : undefined}
+                rel={course.downloadFile.includes('drive.google.com') ? "noopener noreferrer" : undefined}
+                className="btn btn-primary download-btn"
+              >
                 <Download size={18} />
                 Download Course
               </a>
