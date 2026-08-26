@@ -3,7 +3,7 @@ import { siteConfig } from '../../config';
 import './AnnouncementBar.css';
 
 export function AnnouncementBar() {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [timeLeft, setTimeLeft] = useState({ months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
@@ -17,8 +17,10 @@ export function AnnouncementBar() {
         setIsExpired(true);
         clearInterval(interval);
       } else {
+        const totalDays = Math.floor(difference / (1000 * 60 * 60 * 24));
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          months: Math.floor(totalDays / 30),
+          days: totalDays % 30,
           hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((difference % (1000 * 60)) / 1000)
@@ -47,17 +49,19 @@ export function AnnouncementBar() {
   return (
     <div className="announcement-bar">
       <div className="container announcement-content">
-        <span className="announcement-text">LIMITED TIME OFFER — ENROLL NOW</span>
+        <span className="announcement-text">ENROLLMENT CLOSED — NEXT BATCH IN 6 MONTHS</span>
         <div className="announcement-timer">
-          <span className="timer-label">Enrollment closes in</span>
+          <span className="timer-label">Next batch in</span>
           <div className="timer-blocks">
-            <div className="timer-block">{formatNumber(timeLeft.days)}</div>
+            <div className="timer-block">{formatNumber(timeLeft.months)}<span className="timer-unit">mo</span></div>
             <span className="timer-sep">:</span>
-            <div className="timer-block">{formatNumber(timeLeft.hours)}</div>
+            <div className="timer-block">{formatNumber(timeLeft.days)}<span className="timer-unit">d</span></div>
             <span className="timer-sep">:</span>
-            <div className="timer-block">{formatNumber(timeLeft.minutes)}</div>
+            <div className="timer-block">{formatNumber(timeLeft.hours)}<span className="timer-unit">h</span></div>
             <span className="timer-sep">:</span>
-            <div className="timer-block">{formatNumber(timeLeft.seconds)}</div>
+            <div className="timer-block">{formatNumber(timeLeft.minutes)}<span className="timer-unit">m</span></div>
+            <span className="timer-sep">:</span>
+            <div className="timer-block">{formatNumber(timeLeft.seconds)}<span className="timer-unit">s</span></div>
           </div>
         </div>
       </div>
